@@ -17,7 +17,7 @@ def write_json(data, filename='answer.json'):
     with open(filename, 'w') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-def send_message(chat_id, text='привет залупа!'):
+def send_message(chat_id, text='привет!'):
     url = URL + 'sendMessage'
     answer = {'chat_id': chat_id, 'text': text}
     r = requests.post(url, json=answer)
