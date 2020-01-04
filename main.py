@@ -11,7 +11,7 @@ import re
 app = Flask(__name__)
 sslify = SSLify(app)
 
-URL = 'https://api.telegram.org/<yourapi>/'
+URL = 'https://api.telegram.org/<yourapitoken>/'
 
 def write_json(data, filename='answer.json'):
     with open(filename, 'w') as f:
